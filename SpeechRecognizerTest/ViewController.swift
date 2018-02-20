@@ -8,6 +8,7 @@
 
 import UIKit
 import Speech
+import RealmSwift
 class ViewController: UIViewController,SFSpeechRecognizerDelegate {
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))!
     
@@ -25,6 +26,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         button.isEnabled = false
+        //makeDB()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +34,53 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-
+    private func makeDB(){
+        print("realm test start")
+        let realm = try! Realm()
+        let fileManager = FileManager()
+        let pokemonRealmPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] + "/pokemon.realm"
+        // 初期データを作成するため、前回作成したデータがあったら削除する
+        if fileManager.fileExists(atPath: pokemonRealmPath) { try! fileManager.removeItem(atPath: pokemonRealmPath) }
+        try! realm.write { realm.deleteAll() }
+        let allpokename = CSVpokedata.allPKname()
+        for i in 0 ... allpokename.count-1{
+            let data = CSVpokedata.loadPKdata(pkname: allpokename[i])
+            let pokemon = Pokemon()
+            pokemon.id = i
+            pokemon.indexnum = data.num
+            pokemon.name = data.name
+            pokemon.type1 = data.type[0]
+            pokemon.type2 = data.type[1] == "x" ? nil : data.type[1]
+            pokemon.ability1 = data.ability[0]
+            pokemon.ability2 = data.ability[1] == "x" ? nil : data.ability[1]
+            pokemon.ability3 = data.ability[2] == "x" ? nil : data.ability[2]
+            pokemon.bsHP = data.BS[0]
+            pokemon.bsA = data.BS[1]
+            pokemon.bsB = data.BS[2]
+            pokemon.bsC = data.BS[3]
+            pokemon.bsD = data.BS[4]
+            pokemon.bsS = data.BS[5]
+            pokemon.weight = data.weight
+            try! realm.write {
+                realm.add(pokemon)
+            }
+        }
+        try! Realm().writeCopy(toFile: URL(string: pokemonRealmPath)!, encryptionKey: Data(base64Encoded: "pokemon"))
+        print("end make db")
+        // Realmのインスタンスを取得
+        let realmtest = try! Realm()
+        // Realmに保存されてるDog型のオブジェクトを全て取得
+        let pk = realmtest.objects(Pokemon.self)
+        // ためしに名前を表示
+        var names = ""
+        for poke in pk {
+            print("name: \(poke.name)")
+            names += poke.name
+        }
+        textView.text = names
+        print(pokemonRealmPath)
+        //end of realmTest
+    }
     
     override public func viewDidAppear(_ animated: Bool) {
         speechRecognizer.delegate = self

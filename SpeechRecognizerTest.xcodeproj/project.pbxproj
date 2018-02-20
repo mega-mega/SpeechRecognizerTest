@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7713E116203C762800271A31 /* pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713E115203C762800271A31 /* pokemon.swift */; };
 		7729043D203BF3D000B19ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7729043C203BF3D000B19ABC /* AppDelegate.swift */; };
 		7729043F203BF3D000B19ABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7729043E203BF3D000B19ABC /* ViewController.swift */; };
 		77290442203BF3D000B19ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77290440203BF3D000B19ABC /* Main.storyboard */; };
@@ -14,6 +15,12 @@
 		77290447203BF3D000B19ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77290445203BF3D000B19ABC /* LaunchScreen.storyboard */; };
 		77290452203BF3D000B19ABC /* SpeechRecognizerTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77290451203BF3D000B19ABC /* SpeechRecognizerTestTests.swift */; };
 		7729045D203BF3D000B19ABC /* SpeechRecognizerTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7729045C203BF3D000B19ABC /* SpeechRecognizerTestUITests.swift */; };
+		7729046B203C739100B19ABC /* pokedata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7729046A203C739100B19ABC /* pokedata.csv */; };
+		77A3809D203C7DDA00EF2E0B /* CSVpokedata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3809C203C7DDA00EF2E0B /* CSVpokedata.swift */; };
+		77A3809F203C7E1400EF2E0B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3809E203C7E1400EF2E0B /* String.swift */; };
+		8D956BD45C95A27C6062F40B /* Pods_SpeechRecognizerTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C211CC39AAB0D980544A41E0 /* Pods_SpeechRecognizerTestUITests.framework */; };
+		CA604F3C42D1728AA5FC24F7 /* Pods_SpeechRecognizerTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68425F11E6A9FCDE16486CB7 /* Pods_SpeechRecognizerTestTests.framework */; };
+		D03931FB79C7578CBF55E969 /* Pods_SpeechRecognizerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9502187EFC570347A1A52119 /* Pods_SpeechRecognizerTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1494DFC72C0339572E185BEE /* Pods-SpeechRecognizerTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognizerTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognizerTestTests/Pods-SpeechRecognizerTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		2F5A62C453EDA6F2D3F83405 /* Pods-SpeechRecognizerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognizerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognizerTest/Pods-SpeechRecognizerTest.debug.xcconfig"; sourceTree = "<group>"; };
+		68425F11E6A9FCDE16486CB7 /* Pods_SpeechRecognizerTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechRecognizerTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7713E115203C762800271A31 /* pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokemon.swift; sourceTree = "<group>"; };
 		77290439203BF3D000B19ABC /* SpeechRecognizerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechRecognizerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7729043C203BF3D000B19ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7729043E203BF3D000B19ABC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,15 @@
 		77290458203BF3D000B19ABC /* SpeechRecognizerTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechRecognizerTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7729045C203BF3D000B19ABC /* SpeechRecognizerTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizerTestUITests.swift; sourceTree = "<group>"; };
 		7729045E203BF3D000B19ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7729046A203C739100B19ABC /* pokedata.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = pokedata.csv; sourceTree = "<group>"; };
+		77A3809C203C7DDA00EF2E0B /* CSVpokedata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVpokedata.swift; sourceTree = "<group>"; };
+		77A3809E203C7E1400EF2E0B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		7B7C09852D1C047D718E931C /* Pods-SpeechRecognizerTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognizerTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognizerTestUITests/Pods-SpeechRecognizerTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9502187EFC570347A1A52119 /* Pods_SpeechRecognizerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechRecognizerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF46B806A0314113F8A0136 /* Pods-SpeechRecognizerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognizerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognizerTest/Pods-SpeechRecognizerTest.release.xcconfig"; sourceTree = "<group>"; };
+		C211CC39AAB0D980544A41E0 /* Pods_SpeechRecognizerTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechRecognizerTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7B279A860DAF292FBA9F09 /* Pods-SpeechRecognizerTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognizerTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognizerTestTests/Pods-SpeechRecognizerTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D118C1EBE22098CED1F74EF1 /* Pods-SpeechRecognizerTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognizerTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognizerTestUITests/Pods-SpeechRecognizerTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03931FB79C7578CBF55E969 /* Pods_SpeechRecognizerTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA604F3C42D1728AA5FC24F7 /* Pods_SpeechRecognizerTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D956BD45C95A27C6062F40B /* Pods_SpeechRecognizerTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00151F930DCB52E9F7C3D4F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F5A62C453EDA6F2D3F83405 /* Pods-SpeechRecognizerTest.debug.xcconfig */,
+				9CF46B806A0314113F8A0136 /* Pods-SpeechRecognizerTest.release.xcconfig */,
+				CB7B279A860DAF292FBA9F09 /* Pods-SpeechRecognizerTestTests.debug.xcconfig */,
+				1494DFC72C0339572E185BEE /* Pods-SpeechRecognizerTestTests.release.xcconfig */,
+				D118C1EBE22098CED1F74EF1 /* Pods-SpeechRecognizerTestUITests.debug.xcconfig */,
+				7B7C09852D1C047D718E931C /* Pods-SpeechRecognizerTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		77290430203BF3D000B19ABC = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +117,8 @@
 				77290450203BF3D000B19ABC /* SpeechRecognizerTestTests */,
 				7729045B203BF3D000B19ABC /* SpeechRecognizerTestUITests */,
 				7729043A203BF3D000B19ABC /* Products */,
+				00151F930DCB52E9F7C3D4F8 /* Pods */,
+				C20DB0F6C9AD6699CA536A6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,7 +140,11 @@
 				77290440203BF3D000B19ABC /* Main.storyboard */,
 				77290443203BF3D000B19ABC /* Assets.xcassets */,
 				77290445203BF3D000B19ABC /* LaunchScreen.storyboard */,
+				7729046A203C739100B19ABC /* pokedata.csv */,
 				77290448203BF3D000B19ABC /* Info.plist */,
+				7713E115203C762800271A31 /* pokemon.swift */,
+				77A3809C203C7DDA00EF2E0B /* CSVpokedata.swift */,
+				77A3809E203C7E1400EF2E0B /* String.swift */,
 			);
 			path = SpeechRecognizerTest;
 			sourceTree = "<group>";
@@ -125,6 +167,16 @@
 			path = SpeechRecognizerTestUITests;
 			sourceTree = "<group>";
 		};
+		C20DB0F6C9AD6699CA536A6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9502187EFC570347A1A52119 /* Pods_SpeechRecognizerTest.framework */,
+				68425F11E6A9FCDE16486CB7 /* Pods_SpeechRecognizerTestTests.framework */,
+				C211CC39AAB0D980544A41E0 /* Pods_SpeechRecognizerTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77290461203BF3D000B19ABC /* Build configuration list for PBXNativeTarget "SpeechRecognizerTest" */;
 			buildPhases = (
+				4BE6BC979B6D2B56AD72A625 /* [CP] Check Pods Manifest.lock */,
 				77290435203BF3D000B19ABC /* Sources */,
 				77290436203BF3D000B19ABC /* Frameworks */,
 				77290437203BF3D000B19ABC /* Resources */,
+				51281579A02652A80748FF5A /* [CP] Embed Pods Frameworks */,
+				04D425201EDC5AF7FCD70035 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77290464203BF3D000B19ABC /* Build configuration list for PBXNativeTarget "SpeechRecognizerTestTests" */;
 			buildPhases = (
+				7663ECB255F1B9461E1A9945 /* [CP] Check Pods Manifest.lock */,
 				77290449203BF3D000B19ABC /* Sources */,
 				7729044A203BF3D000B19ABC /* Frameworks */,
 				7729044B203BF3D000B19ABC /* Resources */,
+				12E4EBAF50D8998FADD33A03 /* [CP] Embed Pods Frameworks */,
+				9415684486D4AA1EFB4B58BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77290467203BF3D000B19ABC /* Build configuration list for PBXNativeTarget "SpeechRecognizerTestUITests" */;
 			buildPhases = (
+				F1C5C316C58F4D3A2DC4E21D /* [CP] Check Pods Manifest.lock */,
 				77290454203BF3D000B19ABC /* Sources */,
 				77290455203BF3D000B19ABC /* Frameworks */,
 				77290456203BF3D000B19ABC /* Resources */,
+				F251E36A827CC735F95B88A3 /* [CP] Embed Pods Frameworks */,
+				B44193F126B502900A998510 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +296,7 @@
 				77290447203BF3D000B19ABC /* LaunchScreen.storyboard in Resources */,
 				77290444203BF3D000B19ABC /* Assets.xcassets in Resources */,
 				77290442203BF3D000B19ABC /* Main.storyboard in Resources */,
+				7729046B203C739100B19ABC /* pokedata.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,11 +316,166 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04D425201EDC5AF7FCD70035 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechRecognizerTest/Pods-SpeechRecognizerTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12E4EBAF50D8998FADD33A03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechRecognizerTestTests/Pods-SpeechRecognizerTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BE6BC979B6D2B56AD72A625 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechRecognizerTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51281579A02652A80748FF5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpeechRecognizerTest/Pods-SpeechRecognizerTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechRecognizerTest/Pods-SpeechRecognizerTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7663ECB255F1B9461E1A9945 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechRecognizerTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9415684486D4AA1EFB4B58BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechRecognizerTestTests/Pods-SpeechRecognizerTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B44193F126B502900A998510 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechRecognizerTestUITests/Pods-SpeechRecognizerTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1C5C316C58F4D3A2DC4E21D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechRecognizerTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F251E36A827CC735F95B88A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechRecognizerTestUITests/Pods-SpeechRecognizerTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		77290435203BF3D000B19ABC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7713E116203C762800271A31 /* pokemon.swift in Sources */,
+				77A3809D203C7DDA00EF2E0B /* CSVpokedata.swift in Sources */,
+				77A3809F203C7E1400EF2E0B /* String.swift in Sources */,
 				7729043F203BF3D000B19ABC /* ViewController.swift in Sources */,
 				7729043D203BF3D000B19ABC /* AppDelegate.swift in Sources */,
 			);
@@ -424,6 +641,7 @@
 		};
 		77290462203BF3D000B19ABC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F5A62C453EDA6F2D3F83405 /* Pods-SpeechRecognizerTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +657,7 @@
 		};
 		77290463203BF3D000B19ABC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF46B806A0314113F8A0136 /* Pods-SpeechRecognizerTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +673,7 @@
 		};
 		77290465203BF3D000B19ABC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB7B279A860DAF292FBA9F09 /* Pods-SpeechRecognizerTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +691,7 @@
 		};
 		77290466203BF3D000B19ABC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1494DFC72C0339572E185BEE /* Pods-SpeechRecognizerTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +709,7 @@
 		};
 		77290468203BF3D000B19ABC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D118C1EBE22098CED1F74EF1 /* Pods-SpeechRecognizerTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +726,7 @@
 		};
 		77290469203BF3D000B19ABC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B7C09852D1C047D718E931C /* Pods-SpeechRecognizerTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

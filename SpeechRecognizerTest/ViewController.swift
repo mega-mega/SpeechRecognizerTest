@@ -27,6 +27,9 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
         
         button.isEnabled = false
         //makeDB()
+        let frgn:furigana = furigana()
+        frgn.test()
+        
     }
 
     override func didReceiveMemoryWarning() {

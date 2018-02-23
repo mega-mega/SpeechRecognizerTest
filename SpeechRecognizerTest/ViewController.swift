@@ -30,6 +30,11 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
         let frgn:furigana = furigana()
         frgn.test()
         
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            print("message \(frgn.message)")    //5秒後に実行したい処理
+            self.textView.text = frgn.message
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

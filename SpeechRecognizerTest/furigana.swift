@@ -8,8 +8,9 @@
 
 import Foundation
 import Alamofire
-
+import SWXMLHash
 class furigana{
+    public var message:String = ""
     func test(){
         //Alamofire.request(https:"//jlp.yahooapis.jp/FuriganaService/V1/furigana")
         //https://jlp.yahooapis.jp/FuriganaService/V1/furigana?appid=dj00aiZpPTI5R2xhNE1LeDlndSZzPWNvbnN1bWVyc2VjcmV0Jng9YjA-&grade=1&sentence=漢字かな交じり文にふりがなを振ること%E3%80%82
@@ -24,7 +25,11 @@ class furigana{
             print(response.result)
         })*/
         Alamofire.request(msg, method: .get).responseString(completionHandler: { response in
-            print(response.result.value) // レスポンスがディクショナリ形式で入っている
+            //print(response.result.value)
+            self.message = response.result.value!
+            let xml = SWXMLHash.parse(response.result.value!)
+            //print(xml["hoge"]["hoge"].element?.text)
+
         })
     }
 }

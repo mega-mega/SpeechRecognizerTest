@@ -8,7 +8,7 @@ target 'SpeechRecognizerTest' do
   # Pods for SpeechRecognizerTest
   pod 'RealmSwift'
   pod 'Realm'
-
+  pod 'SWXMLHash'
   target 'SpeechRecognizerTestTests' do
     inherit! :search_paths
     # Pods for testing

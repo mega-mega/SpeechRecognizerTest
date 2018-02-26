@@ -31,7 +31,7 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
         frgn.test()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            print("message \(frgn.message)")    //5秒後に実行したい処理
+            //print("message \(frgn.message)")    //5秒後に実行したい処理
             self.textView.text = frgn.message
         }
         

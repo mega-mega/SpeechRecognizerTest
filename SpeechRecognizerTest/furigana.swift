@@ -21,21 +21,6 @@ class furigana{
         let msg = "https://jlp.yahooapis.jp/FuriganaService/V1/furigana?appid=dj00aiZpPTI5R2xhNE1LeDlndSZzPWNvbnN1bWVyc2VjcmV0Jng9YjA-&grade=1&sentence=%e6%bc%a2%e5%ad%97%e3%81%8b%e3%81%aa%e4%ba%a4%e3%81%98%e3%82%8a%e6%96%87%e3%81%ab%e3%81%b5%e3%82%8a%e3%81%8c%e3%81%aa%e3%82%92%e6%8c%af%e3%82%8b%e3%81%93%e3%81%a8%e3%80%82"
         url += "&sentence=" + msg
         print("test   \(url)")
-        /*Alamofire.request(msg, method: .get).response(completionHandler: { response in
-            //print(response.result.value)
-            //self.message = response.data
-            var xml:XMLIndexer! = nil
-            DispatchQueue.global().async {
-                xml = SWXMLHash.parse(response.data!)
-            }
-            // dataを取得するまで待ちます
-            self.wait( { return xml == nil } ) {
-                print("show xml data")
-                print(xml!["hoge"]["hoge"].element?.text)
-            }
-            
-            
-        })*/
         Alamofire.request(msg, method: .get).responseString(completionHandler: { response in
             //print(response.result.value)
             self.message = response.result.value!

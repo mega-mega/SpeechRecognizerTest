@@ -20,7 +20,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var button: UIButton!
     
-    
+    private var names:[String] = [String]()
+    private var text:String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,12 +29,8 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
         button.isEnabled = false
         //makeDB()
         let frgn:furigana = furigana()
-        frgn.test()
+        //frgn.test()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            //print("message \(frgn.message)")    //5秒後に実行したい処理
-            self.textView.text = frgn.message
-        }
         
     }
 
@@ -144,9 +141,20 @@ class ViewController: UIViewController,SFSpeechRecognizerDelegate {
         // We keep a reference to the task so that it can be cancelled.
         recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { result, error in
             var isFinal = false
-            
             if let result = result {
-                self.textView.text = result.bestTranscription.formattedString
+                //self.textView.text = result.bestTranscription.formattedString
+                var apptext:String = result.bestTranscription.formattedString
+                print(apptext + "\(apptext.count)")
+                apptext = String(apptext.suffix(apptext.count - self.text.count))
+                print(apptext + "\(apptext.count)  \(self.text.count)")
+                self.names.append(apptext)
+                self.text += apptext
+                
+                var setText = ""
+                for item in self.names{
+                    setText += item + "\n"
+                }
+                self.textView.text = setText
                 isFinal = result.isFinal
             }
             
